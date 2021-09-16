@@ -107,6 +107,11 @@ class _PopularMoviesState extends State<PopularMoviesPage> {
               }
             }
           });
+          return const IntrinsicWidth(
+            child: CircularProgressIndicator(
+              color: Colors.purple,
+            ),
+          );
         }
         return Column(
           children: [
